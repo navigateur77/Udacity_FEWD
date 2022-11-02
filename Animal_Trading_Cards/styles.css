@@ -1,0 +1,74 @@
+/* add your CSS here */
+
+.container {
+  position: relative;
+  left: 0;
+  top: 15px;
+
+  width: 300px;
+  height: auto;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid lightgrey;
+  box-shadow: 7px 7px 5px #e0e0e0;
+}
+
+h3 {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 18pt;
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  border: 1px solid transparent;
+  text-shadow: 1px 1px 2px blue;
+}
+
+img {
+  /* display: block; */
+  width: 300px;
+  height: auto;
+  margin: auto;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+}
+
+.card {
+  border: 1px lightgrey solid;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: auto;
+  margin-left: 0px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  background-color: lightgreen;
+  border-radius: 10px;
+}
+
+.label {
+  font-weight: bold;
+  font-family: serif;
+  font-size: 12pt;
+}
+
+#intro {
+  font-family: "Oleo script";
+  font-style: italic;
+  font-size: 12pt;
+}
+
+#description {
+  font-family: serif;
+  font-size: 12pt;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-family: serif;
+  font-size: 12pt;
+}

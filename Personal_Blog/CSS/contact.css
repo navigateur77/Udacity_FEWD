@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #f4fbea;
+}
+
+.container-address {
+  height: 100%;
+  max-width: 70rem;
+  text-align: center;
+  margin: 3.8rem auto;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.heading-primary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  margin-top: 4rem;
+  font-style: italic;
+}
+
+.contact {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-icon {
+  color: #e67e22;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  margin: 3.2rem auto;
+}
+
+.address {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2.3rem;
+}
+
+.contact a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2.3rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.contact a:link,
+.contact a:visited {
+  color: #339af0;
+}
+
+.contact a:hover,
+.contact a:active {
+  color: #1971c2;
+}
+
+.contact a:last-child {
+  margin-bottom: 3.2rem;
+}
+
+.back {
+  font-size: 1.8rem;
+  text-align: left;
+  margin-top: 9rem;
+  margin-left: 2.2rem;
+  margin-bottom: 4.2rem;
+}
+
+.link:link,
+.lonk:visited {
+  color: #3f22e6;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.lonk:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}

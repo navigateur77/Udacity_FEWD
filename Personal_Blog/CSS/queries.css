@@ -1,0 +1,68 @@
+@media (max-width: 1200px) {
+  .home {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .grid--3--cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 52.5%;
+  }
+
+  .grid {
+    column-gap: 3.6rem;
+    row-gap: 5.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+  .header {
+    padding: 0 2.8rem;
+  }
+
+  .main-nav-list {
+    gap: 2.8rem;
+  }
+
+  .home {
+    gap: 3.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 44%;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+    padding: 0 6rem;
+    gap: 4.2rem;
+  }
+
+  .home-img {
+    width: 50%;
+  }
+
+  .home-text-box,
+  .home-img-box {
+    text-align: center;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+}

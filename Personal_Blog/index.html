@@ -7,13 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/queries.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>KaJo Tech Solution</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header nav-open">
       <div class="logo-titles">
         <img class="logo" alt="KaJo Tech Solution logo" src="images/fanicon.png" />
       <span class="logo-title">We make it happen</span>
@@ -27,13 +26,17 @@
           <li><a class="main-nav-link nav-cta" href="../HTML/signup.html">Sign Up</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-home">
         <div class="home">
           <div class="home-test-box">
             <h1 class="heading-primary">All your Tech Solutions at your finger tips</h1>
-            <p class="heading-description">The world is facing many chalenges. Cloud computing, Cybersecurity or Data science. We are taking care of your IT Solutions need so you can focus on how to grow your company.</p>
+            <p class="heading-description"><blockquote> The world is facing many chalenges. Cloud computing, Cybersecurity or Data science. We are taking care of your IT Solutions need so you can focus on how to grow your company.</blockquote></p>
             <a href="#" class="btn btn--full margin-right-sm">Worry free</a>
             <a href="#" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-services">
@@ -45,19 +48,22 @@
                 <img src="Images/customers/customer_5.jpg" alt="Customer photo" />
                 <img src="Images/customers/customer_6.jpg" alt="Customer photo" />
               </div>
-              <p class="delivered-text"><span>10,000+</span> services delivered last four years!</p>
+              <p class="delivered-text"><em><span>10,000+</span> services delivered last four years!</em></p>
             </div>
           </div>
           <div class="hero-img-box">
-            <img src="Images/carousel.jpg" class="home-img" alt="Services" />
+            <figure>
+              <img src="Images/carousel.jpg" class="home-img" alt="Services" />
+              <figcaption>Tech solution framework</figcaption>
+            </figure>
           </div>
         </div>
       </section>
       <section class="section-blog">
         <div class="container center-text">
-          <h2 class="heading-secondary">Cloud Computing Services</h2>
+          <h2 class="heading-secondary"><u>Cloud Computing Services</u> </h2>
           <p class="service-description">
-            Cloud computing is providing developers and IT departments with the ability to focus on what matters most and avoid undifferentiated work like procurement, maintenance, and capacity planning. As cloud computing has grown in popularity, several different models and deployment strategies have emerged to help meet specific needs of different users. Each type of cloud service, and deployment method, provides you with different levels of control, flexibility, and management. Understanding the differences between Infrastructure as a Service, Platform as a Service, and Software as a Service, as well as what deployment strategies you can use, can help you decide what set of services is right for your needs.
+            Cloud computing is providing developers and IT departments with the ability to focus on what matters most and avoid undifferentiated work like procurement, maintenance, and capacity planning. As cloud computing has grown in popularity, several different models and deployment strategies have emerged to help meet specific needs of different users. Each type of cloud service, and deployment method, provides you with different levels of control, flexibility, and management. <em>Understanding the differences between Infrastructure as a Service, Platform as a Service, and Software as a Service, as well as what deployment strategies</em> you can use, can help you decide what set of services is right for your needs.
           </p>
         </div>
         <div class="container grid grid--3--cols margin-bottom-md">
@@ -131,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="container all-recipes">
+        <div class="container all-services">
           <a href="#" class="link">All cloud posts &rarr;</a>
         </div>
       </section>
@@ -139,9 +145,9 @@
       <section class="section-blog">
         <div class="container center-text">
           <!-- <span class="subheading">Cloud Computing Services</span> -->
-          <h2 class="heading-secondary">Cybersecurity Services</h2>
+          <h2 class="heading-secondary"><u>Cybersecurity Services</u></h2>
           <p class="service-description">
-            Cyber security can be described as the collective methods, technologies, and processes to help protect the confidentiality, integrity, and availability of computer systems, networks and data, against cyber-attacks or unauthorized access. The main purpose of cyber security is to protect all organizational assets from both external and internal threats as well as disruptions caused due to natural disasters.
+            Cyber security can be described as the collective methods, technologies, and processes to help protect the confidentiality, integrity, and availability of computer systems, networks and data, against cyber-attacks or unauthorized access. The main purpose of cyber security is <em>to protect all organizational assets from both external and internal threats</em> as well as disruptions caused due to natural disasters.
           </p>
         </div>
         <div class="container grid grid--3--cols margin-bottom-md">
@@ -215,7 +221,7 @@
             </div>
           </div>
         </div>
-        <div class="container all-recipes">
+        <div class="container all-services">
           <a href="#" class="link">All cybersecurity posts &rarr;</a>
         </div>
       </section>

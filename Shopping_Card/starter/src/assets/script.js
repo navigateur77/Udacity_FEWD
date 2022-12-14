@@ -82,7 +82,7 @@ const cart = [];
   - if the product is not already in the cart, add it to the cart
 */
 function addProductToCart(productId) {
-  products.forEach((product) => {
+  products.forEach(product, function () {
     if (product["productId"] == productId) {
       product["quantity"] += 1;
       if (!cart.includes(product)) {
@@ -98,11 +98,13 @@ function addProductToCart(productId) {
   - increaseQuantity should then increase the product's quantity
 */
 function increaseQuantity(productId) {
-  products.forEach((product) => {
-    if (product["productId"] == productId) {
-      product["quantity"] += 1;
-    }
-  });
+  addProductToCart(productId);
+
+  // products.forEach((product) => {
+  //   if (product["productId"] == productId) {
+  //     product["quantity"] += 1;
+  //   }
+  // });
   return cart;
 }
 
@@ -112,11 +114,14 @@ function increaseQuantity(productId) {
   - if the function decreases the quantity to 0, the product is removed from the cart
 */
 function decreaseQuantity(productId) {
-  products.forEach((product) => {
-    if (product["productId"] == productId) {
+  cart.forEach(product, function () {
+    if (product["productId"] === productId) {
       product["quantity"] -= 1;
-      if (product["quantity"] == 0) {
-        cart.splice(product, 1);
+      for (var i = 0; i < cart.length; i++) {
+        if (cart[i]["quantity"] === 0) {
+          cart[i]["quantity"] = 0;
+          cart.splice(i, 1);
+        }
       }
     }
   });
@@ -128,13 +133,13 @@ function decreaseQuantity(productId) {
   - removeProductFromCart should remove the product from the cart
 */
 function removeProductFromCart(productId) {
-  cart.forEach((product) => {
-    if (product["productId"] == productId) {
-      const indexProduct = product;
-      cart.splice(indexProduct, 1);
-      product["quantity"] = 0;
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i]["productId"] === productId) {
+      cart[i]["quantity"] = 0;
+      cart.splice(i, 1);
     }
-  });
+    console.log(cart[i]);
+  }
   return cart;
 }
 
@@ -145,7 +150,7 @@ function removeProductFromCart(productId) {
 
 function cartTotal() {
   let productSum = 0;
-  cart.forEach((pduct) => {
+  cart.forEach(pduct, function () {
     productSum += pduct["price"] * pduct["quantity"];
   });
   return productSum;

@@ -118,7 +118,7 @@ img {
 #intro {
   font-style: italic;
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 1.8;
   margin-bottom: 3.2rem;
 }
 
@@ -169,4 +169,85 @@ li {
 .lonk:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+@media (max-width: 75em) {
+  html {
+    /*9px / 16px = 0.5625*/
+    font-size: 56.25%;
+  }
+
+  .author-name {
+    font-size: 1.4rem;
+  }
+
+  .tech-logo {
+    width: 100%;
+  }
+
+  .heading-secondary {
+    font-size: 4.5rem;
+  }
+
+  ul {
+    font-size: 2.4rem;
+  }
+  em {
+    font-size: 2rem;
+  }
+
+  .label {
+    font-size: 2.4rem;
+  }
+
+  #intro {
+    font-size: 2.4rem;
+  }
+
+  #description {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .tech-logo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 44em) {
+  .tech-logo {
+    width: 100%;
+  }
+
+  .heading-secondary {
+    font-size: 3.8rem;
+    margin-left: 2rem;
+  }
+
+  .blogs {
+    max-width: 66rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    padding: 4.8rem 0 9.6rem 0;
+  }
+}
+
+@media (max-width: 34em) {
+  .tech-logo {
+    width: 100%;
+  }
+
+  .heading-secondary {
+    font-size: 3.8rem;
+    margin-left: 2rem;
+  }
+
+  .blogs {
+    max-width: 66rem;
+  }
 }

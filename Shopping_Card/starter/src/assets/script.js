@@ -82,7 +82,7 @@ const cart = [];
   - if the product is not already in the cart, add it to the cart
 */
 function addProductToCart(productId) {
-  products.forEach(product, function () {
+  products.forEach(function (product) {
     if (product["productId"] == productId) {
       product["quantity"] += 1;
       if (!cart.includes(product)) {
@@ -114,7 +114,7 @@ function increaseQuantity(productId) {
   - if the function decreases the quantity to 0, the product is removed from the cart
 */
 function decreaseQuantity(productId) {
-  cart.forEach(product, function () {
+  cart.forEach(function (product) {
     if (product["productId"] === productId) {
       product["quantity"] -= 1;
       for (var i = 0; i < cart.length; i++) {
@@ -150,7 +150,7 @@ function removeProductFromCart(productId) {
 
 function cartTotal() {
   let productSum = 0;
-  cart.forEach(pduct, function () {
+  cart.forEach(function (pduct) {
     productSum += pduct["price"] * pduct["quantity"];
   });
   return productSum;

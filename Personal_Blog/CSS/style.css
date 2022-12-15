@@ -1,4 +1,3 @@
-/* @import "queries.css"; */
 @import "nav.css";
 @import "home.css";
 @import "blogs.css";
@@ -48,10 +47,6 @@ body {
   text-transform: uppercase;
 }
 
-/***************************/
-/* MOBILE APP */
-/**************************/
-
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -69,6 +64,12 @@ body {
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
+
+/*****************************/
+/* BELOW 1244px (SMALLER desktops) */
+/**********************************/
+
+/* 1244px / 16px = 84em*/
 
 @media (max-width: 84em) {
   .home {
@@ -128,14 +129,24 @@ body {
     font-size: 50%;
   }
 
+  main {
+    width: auto;
+  }
+
   .home {
     grid-template-columns: 1fr;
-    padding: 0 8rem;
-    gap: 6.4rem;
+    padding: 0 4rem;
+    gap: 4.4rem;
   }
 
   .home-img {
-    width: 60%;
+    width: 80%;
+  }
+
+  .heading-description {
+    font-size: 1.4rem;
+    /* line-height: 1.6; */
+    margin-bottom: 2.8rem;
   }
 
   .home-text-box,
@@ -168,7 +179,7 @@ body {
     width: 100%;
     height: 100vh;
     transform: translateX(100%);
-    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
 
     display: flex;
     align-items: center;
@@ -224,10 +235,6 @@ body {
     grid-column: 1 / -1;
     justify-self: center;
   }
-
-  /* .grid--footer {
-    grid-template-columns: repeat(6, 1fr);
-  } */
 }
 
 /*****************************/
@@ -262,6 +269,6 @@ body {
   }
 
   .home-img {
-    width: 80%;
+    width: 100%;
   }
 }

@@ -76,20 +76,26 @@ products.push(product_6);
 /* Declare an empty array named cart to hold the items in the cart */
 const cart = [];
 // console.log(cart);
+
+/* Create a helper function to get product Id */
+function getProductById(productId) {
+  return products.find((product) => product.productId === productId);
+}
+
 /* Create a function named addProductToCart that takes in the product productId as an argument
   - addProductToCart should get the correct product based on the productId
   - addProductToCart should then increase the product's quantity
   - if the product is not already in the cart, add it to the cart
 */
+
 function addProductToCart(productId) {
-  products.forEach(function (product) {
-    if (product["productId"] == productId) {
-      product["quantity"] += 1;
-      if (!cart.includes(product)) {
-        cart.push(product);
-      }
+  let product = getProductById(productId);
+  if (product) {
+    product["quantity"] += 1;
+    if (!cart.includes(product)) {
+      cart.push(product);
     }
-  });
+  }
   return cart;
 }
 
@@ -98,13 +104,10 @@ function addProductToCart(productId) {
   - increaseQuantity should then increase the product's quantity
 */
 function increaseQuantity(productId) {
-  addProductToCart(productId);
-
-  // products.forEach((product) => {
-  //   if (product["productId"] == productId) {
-  //     product["quantity"] += 1;
-  //   }
-  // });
+  let product = getProductById(productId);
+  if (product) {
+    product["quantity"] += 1;
+  }
   return cart;
 }
 
@@ -113,20 +116,21 @@ function increaseQuantity(productId) {
   - decreaseQuantity should decrease the quantity of the product
   - if the function decreases the quantity to 0, the product is removed from the cart
 */
+
 function decreaseQuantity(productId) {
-  cart.forEach(function (product) {
-    if (product["productId"] === productId) {
-      product["quantity"] -= 1;
-      for (var i = 0; i < cart.length; i++) {
-        if (cart[i]["quantity"] === 0) {
-          cart[i]["quantity"] = 0;
-          cart.splice(i, 1);
-        }
+  let product = getProductById(productId);
+  if (product) {
+    product["quantity"] -= 1;
+    for (var i = 0; i < cart.length; i++) {
+      if (cart[i]["quantity"] === 0) {
+        cart[i]["quantity"] = 0;
+        cart.splice(i, 1);
       }
     }
-  });
+  }
   return cart;
 }
+
 /* Create a function named removeProductFromCart that takes in the productId as an argument
   - removeProductFromCart should get the correct product based on the productId
   - removeProductFromCart should update the product quantity to 0

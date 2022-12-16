@@ -57,13 +57,13 @@ body {
 }
 
 .address {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 2.3rem;
 }
 
 .contact a {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 2.3rem;
   text-decoration: none;
@@ -105,4 +105,34 @@ body {
 .lonk:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 44em) {
+  .container-address {
+    max-width: 60rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .container-address {
+    max-width: 40rem;
+  }
 }

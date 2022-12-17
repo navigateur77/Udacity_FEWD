@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script defer src="script.js"></script>
@@ -14,15 +14,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo-titles">
+      <a href="#">
         <img class="logo" alt="KaJo Tech Solution logo" src="images/fanicon.png" />
-      <span class="logo-title">We make it happen</span>
-      </div>
+      </a>
+      <!-- <div class="logo-titles"> -->
+        
+      <!-- <span class="logo-title">We make it happen</span>
+      </div> -->
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Home</a></li>
           <li><a class="main-nav-link" href="../HTML/about.html">About Neb</a></li>
-          <li><a class="main-nav-link dropdown" href="../HTML/blog.html">Blog</a</li>
+          <li><a class="main-nav-link" href="../HTML/blog.html">Blog</a</li>
           <li><a class="main-nav-link" href="../HTML/contact.html">Contact</a></li>
           <li><a class="main-nav-link nav-cta" href="../HTML/signup.html">Sign Up</a></li>
         </ul>
@@ -62,10 +65,8 @@
       </section>
       <section class="section-blog">
         <div class="container center-text">
-          <h2 class="heading-secondary"><u>Cloud Computing Services</u> </h2>
-          <p class="service-description">
-            Cloud computing is providing developers and IT departments with the ability to focus on what matters most and avoid undifferentiated work like procurement, maintenance, and capacity planning. As cloud computing has grown in popularity, several different models and deployment strategies have emerged to help meet specific needs of different users. Each type of cloud service, and deployment method, provides you with different levels of control, flexibility, and management. <em>Understanding the differences between Infrastructure as a Service, Platform as a Service, and Software as a Service, as well as what deployment strategies</em> you can use, can help you decide what set of services is right for your needs.
-          </p>
+          <h3 class="heading-tertiary"><u>Cloud Computing Services</u></h3>
+          <p class="heading-description"> computing is providing developers and IT departments with the ability to focus on what matters most and avoid undifferentiated work like procurement, maintenance, and capacity planning. As cloud computing has grown in popularity, several different models and deployment strategies have emerged to help meet specific needs of different users. Each type of cloud service, and deployment method, provides you with different levels of control, flexibility, and management. <em>Understanding the differences between Infrastructure as a Service, Platform as a Service, and Software as a Service, as well as what deployment strategies</em> you can use, can help you decide what set of services is right for your needs.</p>
         </div>
         <div class="container grid grid--3--cols margin-bottom-md">
           <div class="service">
@@ -145,18 +146,15 @@
       <!--Cybersecurity Blog-->
       <section class="section-blog">
         <div class="container center-text">
-          <!-- <span class="subheading">Cloud Computing Services</span> -->
-          <h2 class="heading-secondary"><u>Cybersecurity Services</u></h2>
-          <p class="service-description">
-            Cyber security can be described as the collective methods, technologies, and processes to help protect the confidentiality, integrity, and availability of computer systems, networks and data, against cyber-attacks or unauthorized access. The main purpose of cyber security is <em>to protect all organizational assets from both external and internal threats</em> as well as disruptions caused due to natural disasters.
-          </p>
+          <h3 class="heading-tertiary"><u>Cybersecurity Services</u></h3>
+          <p class="heading-description">Cyber security can be described as the collective methods, technologies, and processes to help protect the confidentiality, integrity, and availability of computer systems, networks and data, against cyber-attacks or unauthorized access. The main purpose of cyber security is <em>to protect all organizational assets from both external and internal threats</em> as well as disruptions caused due to natural disasters.</p>
         </div>
         <div class="container grid grid--3--cols margin-bottom-md">
           <div class="service">
             <img src="Images/Card/Cyber/cve_1.png" alt="CVE Logo" class="service-img" />
             <div class="service-content">
               <div class="service-tags">
-                <span class="tag tag--paleo">CVE</span>
+                <span class="tag tag--cyber">CVE</span>
               </div>
               <p class="service-title">Common Vulnerabilities and Exposures</p>
               <ul class="service-attributes">
@@ -179,7 +177,7 @@
             <img src="Images/Card/Cyber/tls_1.png" alt="SSL/TLS Logo" class="service-img" />
             <div class="service-content">
               <div class="service-tags">
-                <span class="tag tag--paleo">Socket</span>
+                <span class="tag tag--cyber">Socket</span>
               </div>
               <p class="service-title">SSL/TLS</p>
               <ul class="service-attributes">
@@ -202,7 +200,7 @@
             <img src="Images/Card/Cyber/vpn_1.png" alt="GOOGLE Logo" class="service-img" />
             <div class="service-content">
               <div class="service-tags">
-                <span class="tag tag--paleo">VPN</span>
+                <span class="tag tag--cyber">VPN</span>
               </div>
               <p class="service-title">Virtual Private Network</p>
               <ul class="service-attributes">

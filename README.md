@@ -4,7 +4,7 @@ The goal of the Front End Web Developer program is to equip learners with the un
 
 ## Projects
 
-1. Build a simple Anaimal_trading_card
+1. Build a simple Animal_trading_card
 
 2. Build a Personal Blog Website
 
